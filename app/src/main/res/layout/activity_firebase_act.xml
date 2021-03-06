@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context=".firebase_act">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="364dp"
+        android:layout_height="629dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/firebase" />
+
+        <LinearLayout
+            android:layout_width="318dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="220dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etnombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese Nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etdestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese Destino"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etpromocion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese Promocion"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="400dp"
+
+            android:background="@android:color/holo_orange_dark"
+            android:text="GUARDAR CLIENTES" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="440dp"
+
+            android:background="@android:color/holo_green_light"
+            android:text="LISTADO CLIENTES" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
